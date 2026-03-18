@@ -216,7 +216,7 @@ The distillation setup is critical here. Because the student must learn to match
 
 This masking is the key technical contribution that makes Stage 1 tractable: without it, you would have to run the autoregressive loop token-by-token during training, which is far too slow.
 
-### Stage 2 - Full pretraining (planned)
+### Stage 2 - Full pretraining (current, in progress, https://github.com/SergiuDeveloper/yoro-full-pretraining)
 
 Stage 2 abandons fine-tuning in favor of training SubnetLLM from scratch on a large corpus. Rather than distilling from a teacher, the model will be pretrained end-to-end with the YORO architecture from random initialization of the three trainable subnets (the frozen blocks will still be initialized from a pretrained model, at least initially, or may themselves be trained).
 
